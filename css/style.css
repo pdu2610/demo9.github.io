@@ -1,0 +1,1453 @@
+/* Font famliy CSS */
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../font/MYRIADPRO-REGULAR.woff2') format('woff2'), url('../font/MYRIADPRO-REGULAR.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../font/MYRIADPRO-BOLD.woff2') format('woff2'), url('../font/MYRIADPRO-BOLD.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* custom css start */
+/** Date Picker Css*/
+
+.calendarIcon,
+.eventCalOut {
+    background-color: #497abc;
+}
+
+.ui-datepicker th,
+.ui-state-highlight {
+    background-color: #141414
+}
+
+.ui-datepicker tbody a:hover,
+.ui-state-active {
+    background-color: #141414
+}
+
+
+
+.ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding: 0;
+    margin: 5px 0
+}
+
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-prev {
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    text-align: left;
+    text-indent: -999em;
+    overflow: hidden;
+    background: 0 0;
+    padding: 0;
+    margin: 0
+}
+
+.ui-datepicker .ui-datepicker-next:hover,
+.ui-datepicker .ui-datepicker-prev:hover {
+    top: 0;
+    background: 0 0;
+    padding: 0;
+    margin: 0
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-prev:hover {
+    left: 0
+}
+
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-next:hover {
+    right: 0
+}
+
+.ui-datepicker .ui-datepicker-prev:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 0;
+    height: 0;
+    left: 8px;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent
+}
+
+.ui-datepicker .ui-datepicker-next:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 0;
+    height: 0;
+    right: 8px;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fff
+}
+
+.ui-datepicker .ui-datepicker-next span,
+.ui-datepicker .ui-datepicker-prev span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -7px;
+    top: 50%;
+    margin-top: -8px;
+    font-size: 12px
+}
+
+.ui-datepicker .ui-datepicker-title {
+    line-height: 30px;
+    margin: 0 35px;
+    overflow: hidden;
+    text-align: center
+}
+
+.ui-datepicker .ui-datepicker-title select {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
+    font-size: 14px;
+    height: 30px;
+    margin: 0;
+    padding: 0
+}
+
+.ui-datepicker select.ui-datepicker-month-year {
+    width: 100%
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    width: 48%
+}
+
+.ui-datepicker table {
+    width: 100%;
+    font-size: .9em;
+    border-collapse: collapse;
+    margin: 0 0 .4em;
+    border: 0 none
+}
+
+.ui-datepicker th {
+    padding: .5em .3em;
+    text-align: center;
+    font-weight: 700;
+    border: 0
+}
+
+.ui-datepicker td {
+    border: 0;
+    padding: 1px;
+    background-color: transparent
+}
+
+.ui-datepicker tr:nth-child(2n+1) td,
+.ui-datepicker-calendar .tableRowOdd {
+    background-color: transparent
+}
+
+.ui-datepicker td a,
+.ui-datepicker td span {
+    display: block;
+    padding: .2em;
+    text-align: right;
+    text-decoration: none
+}
+
+.ui-datepicker .ui-datepicker-buttonpane {
+    background-image: none;
+    margin: .7em 0 0 0;
+    padding: 0 .2em;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    overflow: hidden
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+    float: right;
+    margin: .5em .2em .4em;
+    cursor: pointer;
+    padding: .2em .6em .3em .6em;
+    width: auto;
+    overflow: visible
+}
+
+.eventcal-out {
+    position: absolute;
+    width: 222px;
+    right: -222px;
+    float: right;
+    top: 70px;
+    z-index: 22
+}
+
+.calendar-icon {
+    width: 50px;
+    height: 52px;
+    position: absolute;
+    left: -50px
+}
+
+.calendar-icon span {
+    background-position: -113px -27px;
+    width: 29px;
+    height: 29px;
+    margin: 10px
+}
+
+.calendar-out {
+    padding: 5px
+}
+
+.calendar-out .ui-datepicker {
+    width: 100%
+}
+
+.calendar-out .button {
+    background-color: #2979ca;
+    color: #fff;
+    display: block;
+    text-align: center;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.calendar-out .button:hover {
+    background-color: #173c84
+}
+
+.ui-datepicker tbody a {
+    color: #fff
+}
+
+.ui-datepicker-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff
+}
+
+.ui-datepicker th {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff
+}
+
+.ui-datepicker-next,
+.ui-datepicker-prev {
+    width: 25px;
+    font-size: 16px;
+    height: 25px;
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+    color: #fff
+}
+
+.ui-datepicker-prev span {
+    background-position: -147px -27px;
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    position: static;
+    margin: 5px 0 0
+}
+
+.ui-datepicker-next span {
+    background-position: -175px -27px;
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    position: static;
+    margin: 5px 0 0
+}
+
+.ui-datepicker td a,
+.ui-datepicker td span {
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    border-radius: 50%
+}
+
+.ui-datepicker-trigger {
+    display: none;
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+    overflow: hidden;
+    background: 0 0!important;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: -45px;
+    top: 7px
+}
+
+.cal-icon {
+    background-position: -205px -107px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    vertical-align: top
+}
+
+
+/** Custom Selectbox HeapBox Css*/
+
+.heapBox {
+    clear: both;
+    position: relative;
+    text-align: left
+}
+
+.heapBox:after,
+.heapBox:before {
+    content: " ";
+    display: table
+}
+
+.heapBox:after {
+    clear: both
+}
+
+.heapBox * {
+    margin: 0;
+    padding: 0;
+    outline: 0
+}
+
+.heapBox.disabled .holder {
+    color: #ffbc46
+}
+
+.heapBox a {
+    text-decoration: none;
+    color: #fff
+}
+
+
+
+.heapBox .handler {
+    display: block;
+    position: absolute;
+    right: -2px;
+    top: 0;
+    border: none;
+    height: 40px;
+    width: 50px;
+}
+
+/* .heapBox .handler:before {
+    border: solid #000;
+    border-width: 0 0 3px 3px;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    z-index: 13;
+    right: 5px;
+    top: 5px
+} */
+
+.heapBox div.heap {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    left: 0;
+    width: 100%;
+    top: 100%;
+    overflow: hidden;
+    z-index: 99
+}
+
+.heapBox .heap .heapOptions {
+    display: block;
+    overflow: hidden;
+    z-index: 20;
+    position: relative;
+    background-color: #141414;
+    padding: 0
+}
+
+.heapBox .heap a.sliderUp {
+    display: block;
+    width: 100%;
+    height: 15px;
+    background: #fff url(../images/slider_arrow_up.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-bottom: 1px solid #d18814;
+    position: absolute;
+    top: 0;
+    z-index: 30
+}
+
+.heapBox .heap a.sliderDown {
+    display: block;
+    width: 100%;
+    height: 15px;
+    background: #fff url(../images/slider_arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top: 1px solid #d18814;
+    position: absolute;
+    bottom: 0;
+    z-index: 30
+}
+
+.heapBox .heap .heapOptions .heapOption {
+    z-index: 20;
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+    margin: 0
+}
+
+.heapBox .heap .heapOptions .heapOption a {
+    display: block;
+    line-height: 1.42857;
+    padding: 6px 10px;
+    text-transform: none;
+    color: #fff;
+    border: 0 solid transparent;
+    font-weight: 300;
+    text-transform: none
+}
+
+.heapBox .heap .heapOptions .heapOption a.selected,
+.heapBox .heap .heapOptions .heapOption a:hover {
+    background-image: linear-gradient( 
+90deg
+ , #bb8719 0%, #bb8719 37%, #e6c45d 73%, #bb8719 100%);
+    color: #fff
+}
+
+.heapBox .heap .heapOptions .heapOption a.disabled {
+    color: #f6bb5a
+}
+
+.shipping-region .heapBox .heap .heapOptions {
+    height: 208px;
+    overflow: auto
+}
+/* custom css end */
+
+/* reset css start*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background: transparent;
+    outline: 0px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/* reset css end*/
+
+
+/* genral css start */
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border: none;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Myriad Pro';
+    
+}
+
+body {
+    font-family: 'Myriad Pro';
+    line-height: 1.4;
+    background-color: #fff;
+    color: #000000;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.wrap-inner {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1320px;
+}
+
+.clearfix::after,
+.wrap-inner::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Genral css end */
+
+
+/* header start */
+
+header#header {
+    padding: 20px 0px;
+}
+
+#logo {
+    float: left;
+    margin: 0;
+    position: relative;
+}
+
+#logo a {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+}
+
+.headerright {
+    float: left;
+    width: 100%;
+    margin-left: -300px;
+    text-align: right;
+    padding: 20px 0 20px 320px;
+}
+
+.headernum,
+.headerbtn,
+.headermenu {
+    display: inline-block;
+    position: relative;
+}
+
+.headerbtn {
+    position: relative;
+    bottom: 0;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.headerbtn a,
+.banerbtn,
+.bookbtn button,
+.aboutcontant a,
+.btn,
+.insurncesection a {
+    font-size: 14px;
+    vertical-align: top;
+    font-weight: 400;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient( 90deg, #bb8719 0%, #bb8719 37%, #e6c45d 73%, #bb8719 100%);
+    color: #fff;
+    padding: 6px 30px;
+    line-height: 24px;
+    text-transform: uppercase;
+    max-width: 215px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.headermenu i {
+    margin: 0px 10px 0px 10px;
+    font-size: 18px;
+}
+
+.headermenu a {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.headernum a {
+    font-size: 20px;
+}
+
+.headerbtn a:hover,
+.banercaption a:hover,
+.bookbtn button:hover,
+.aboutcontant a:hover,
+.btn:hover,
+.insurncesection a:hover {
+    background-position: 100px;
+}
+
+.headernum a:hover {
+    color: #bb8719;
+}
+
+.headermenu a:hover {
+    color: #bb8719;
+}
+
+
+/* header end */
+
+
+/* Middle Section Start */
+
+.baneritem {
+    background-image: url(../img/implant-dentistry.jpg);
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 700px;
+}
+
+.bannersection .wrap-inner {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.baneritem img {
+    width: 100%;
+    visibility: hidden;
+    height: 100%;
+}
+
+.baneritem {
+    position: relative;
+}
+
+.banercaption {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.banercaption h2 {
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 54px;
+    margin: 0 0 20px;
+    font-weight: 400;
+}
+
+.form-fill {
+    margin-bottom: 15px;
+    width: 33.33%;
+    padding: 0px 10px;
+    display: inline-block;
+    float: left;
+}
+
+.heapBox .holder,
+.form-fill input,
+.formfill textarea {
+    display: block;
+    width: 100%;
+    position: relative;
+    background: 0 0;
+    color: #808082;
+    font-size: 15px;
+    height: 40px;
+    line-height: 1.42857;
+    height: 42px;
+    padding: 10px 0px 10px 10px;
+    z-index: 10;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid #bb8719;
+    outline: 0;
+}
+
+.heapBox .handler:before {
+    content: '';
+    border: solid #000;
+    border-width: 0 0 3px 3px;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate( -45deg);
+    -webkit-transform: rotate( -45deg);
+    position: absolute;
+    z-index: 13;
+    right: 15px;
+    top: 15px;
+}
+
+.btn-option input {
+    display: none;
+}
+
+.btn-option label {
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: transparent;
+    color: #808082;
+    cursor: pointer;
+    width: 50%;
+    height: 42px;
+    text-align: center;
+    float: left;
+    border-width: 1px;
+    border-style: solid;
+    border-image-source: linear-gradient( 90deg, #bb8719 0%, #bb8719 37%, #e6c45d 73%, #bb8719 100%);
+    border-image-slice: 1;
+}
+
+.baner-radio:checked+.baner-group {
+    background-image: linear-gradient( 90deg, #bb8719 0%, #bb8719 37%, #e6c45d 73%, #bb8719 100%);
+    border: none;
+    color: #ffffff;
+}
+
+.formfill {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 0px 10px;
+    display: inline-block;
+    float: left;
+}
+
+.appoimentsection h2 {
+    font-size: 32px;
+    line-height: 1.1;
+    color: #373431;
+    margin: 0 0 50px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.appoimentsection {
+    padding: 40px 0px;
+    background-color: #ededed;
+}
+
+.bookbtn {
+    text-align: center;
+}
+
+.bookbtn button {
+    border: none;
+    padding: 6px 30px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.aboutcol {
+    float: left;
+    width: 50%;
+    padding: 0px px;
+    display: inline-block;
+}
+
+.aboutinner {
+    background-image: url(../img/about-us.jpg);
+    font-size: 0;
+    height: 620px;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutinner img {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutsection .wrap-inner {
+    max-width: 1600px;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutcontant {
+    padding: 40px 15px 0px 15px;
+    max-width: 700px;
+}
+
+.aboutcontant h1 {
+    font-size: 32px;
+    line-height: 1.1;
+    color: #000000;
+    margin: 0 0 30px;
+    font-weight: 100;
+}
+
+.aboutcontant p {
+    margin: 0 0 30px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #bdc2bc;
+}
+
+.aboutcontant a {
+    margin: 0;
+    max-width: 120px;
+    padding: 6px 20px;
+    display: inline-block;
+}
+
+.choisecol {
+    padding: 10px;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.choisethum h3 {
+    font-size: 20px;
+    margin: 0px 0px 10px 0px;
+}
+
+.choiseicon {
+    padding: 0px 0px 20px 0px;
+}
+
+.choisebox {
+    max-width: 256px;
+    margin: 0 auto;
+}
+
+.whychoosesection h2 {
+    font-size: 32px;
+    line-height: 1.1;
+    color: #373431;
+    margin: 0 0 50px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.whychoosesection {
+    padding: 40px 0px;
+    background-color: #ededed;
+}
+
+.choisethum p {
+    color: #bdc2bc;
+}
+
+.verdictcol {
+    width: 33.33%;
+    padding: 0 15px;
+    float: left;
+    text-align: center;
+}
+
+.contant h3 {
+    margin: 60px 0px;
+    color: white;
+}
+
+.verdictsection {
+    padding: 55px 0px;
+    background-color: #141414;
+}
+
+.verdictsection .wrap-inner {
+    max-width: 1000px;
+}
+
+.servicecol {
+    width: 25%;
+    padding: 15px;
+    float: left;
+    text-align: center;
+}
+
+.servicebox {
+    height: 270px;
+    background-color: #ededed;
+    overflow: hidden;
+}
+
+.servicebox .thumb {
+    max-width: 120px;
+    margin: 65px auto;
+    /* overflow: hidden; */
+}
+
+.hmservicesection {
+    padding: 80px 0px;
+}
+
+.hmservicesection h2 {
+    font-size: 36px;
+    line-height: 1.1;
+    color: #000000;
+    margin: 0 0 50px;
+    text-align: center;
+}
+
+.serviceblock {
+    position: relative;
+    overflow: hidden;
+}
+
+.servicethumb {
+    text-align: center;
+    background-color: #ededed;
+    padding: 65px 65px 115px 65px;
+}
+
+.servicebox h3 {
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    width: 100%;
+    background-color: #1c2e4a;
+    padding: 10px 0px;
+}
+
+.servicebox {
+    position: relative;
+}
+
+a.servicetxt:hover {
+    color: #bb8719;
+}
+
+.servicetxt {
+    color: white;
+    font-weight: 100;
+}
+
+.servicethumb img {
+    height: 85px;
+}
+
+.ourservicesection h2 {
+    font-size: 32px;
+    line-height: 1.1;
+    color: #373431;
+    margin: 0 0 50px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.ourservicesection {
+    padding: 40px 0px;
+}
+
+.meetcol {
+    width: 33.33%;
+    padding: 0px 15px 0px 0px;
+    float: left;
+    text-align: end;
+}
+
+.meetcontant {
+    width: 66.6666%;
+    padding: 0 15px;
+    float: right;
+}
+
+.meetcontant small {
+    font-weight: 300;
+    margin-bottom: 22px;
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.meetcontant h3 a {
+    font-size: 24px;
+    font-weight: normal;
+    color: #000000;
+    margin: 0 0 5px;
+}
+
+.meetcontant p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.meetcontant a {
+    margin: 0;
+    display: inline-block;
+}
+
+.meetsection {
+    padding: 40px 0;
+    background-color: #ededed;
+}
+
+.meetcontant h3 a:hover {
+    color: #bb8719;
+}
+
+.meetsection h2 {
+    font-size: 32px;
+    line-height: 1.1;
+    color: #373431;
+    margin: 0 0 50px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.insurncesection .wrap-inner {
+    max-width: 1100px;
+}
+
+.insurnceconntant {
+    text-align: center;
+}
+
+.insurnceconntant p {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: #bdc2bc;
+}
+
+.insurnceconntant a {
+    display: inline-block;
+    padding: 6px 30px;
+}
+
+.insurncesection h2 {
+    font-size: 32px;
+    line-height: 1.1;
+    color: #373431;
+    margin: 0 0 30px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.insurncesection {
+    padding: 40px 0px;
+}
+
+.btn-option {
+    position: relative;
+}
+
+
+/* Middle Section End */
+
+
+/* footer start */
+
+.footerbtn input {
+    display: none;
+}
+
+.footerformsection {
+    padding: 40px 0px;
+    background-color: #ededed;
+}
+
+.footerformsection h2 {
+    font-size: 32px;
+    line-height: 1.1;
+    color: #373431;
+    margin: 0 0 30px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.footerbtn input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.footerbtn label {
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: transparent;
+    color: #808082;
+    cursor: pointer;
+    width: 50%;
+    height: 42px;
+    text-align: center;
+    float: left;
+    border-width: 1px;
+    border-style: solid;
+    border-image-source: linear-gradient( 90deg, #bb8719 0%, #bb8719 37%, #e6c45d 73%, #bb8719 100%);
+    border-image-slice: 1;
+}
+
+.footerbtn label:hover {
+    cursor: pointer;
+}
+
+.footerbtn input:checked+label {
+    background-image: linear-gradient( 90deg, #bb8719 0%, #bb8719 37%, #e6c45d 73%, #bb8719 100%);
+    border: none;
+    color: #ffffff;
+}
+
+.footercol {
+    width: 50%;
+    padding: 0 10px;
+    float: left;
+}
+
+.footerinfo {
+    float: left;
+    margin: 0;
+    width: 50%;
+    z-index: 1;
+    position: relative;
+    padding: 10px;
+}
+
+.opninghours {
+    float: left;
+    margin: 0;
+    width: 50%;
+    z-index: 1;
+    position: relative;
+    padding: 10px;
+    color: white;
+}
+
+.footercall a,
+.footerfax,
+.footeradd a {
+    margin-bottom: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.footermail a {
+    color: white;
+    display: inline-block;
+}
+
+.footercall a:hover,
+.footeradd a:hover,
+.footermail a:hover {
+    color: #bb8719;
+}
+
+.foothourslist li {
+    margin-bottom: 8px;
+    display: inline-block;
+    width: 100%;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.foothoursday {
+    width: 125px;
+    display: inline-block;
+}
+
+.opninghours h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 25px;
+    line-height: 1.1;
+}
+
+.footermap iframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 0;
+    outline: 0;
+}
+
+.footermap {
+    width: -40%;
+    border: none;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.footerinnersection {
+    padding: 40px 0px;
+    background-color: #141414;
+}
+
+.footertext {
+    text-align: center;
+    padding: 20px 0px;
+    color: #ffffff;
+    background-color: #141414;
+}
+
+.footercontant a {
+    color: white;
+    display: inline-block;
+}
+
+.footercontant a:hover {
+    color: #bb8719;
+}
+
+
+/* footer end */
+
+.nav-toggle{
+	position: relative;
+    top: 10px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+span.icon-bar{
+	position:absolute;
+	right:12px;
+	display:block;
+	width:26px;
+	height:2px;
+	background-color:black;
+}
+.icon-bar:nth-child(1){
+  top:17px;
+}
+.icon-bar:nth-child(2){
+  top:24px;
+}
+.icon-bar:nth-child(3){
+  top:31px;
+}
+.nav-toggle{
+	display:none;
+}
+span.icon-bar{
+	-webkit-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+.nav-toggle.active .icon-bar:nth-child(1){
+	top:24px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.nav-toggle.active .icon-bar:nth-child(2){
+	width:0;
+}
+.nav-toggle.active .icon-bar:nth-child(3){
+	top:24px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+ul.main-menu {
+    display: none;
+}
+
+.ui-datepicker {
+    color: #fff;
+    font-family: Arial;
+    font-size: 13px;
+    width: 20em;
+    padding: 0;
+    display: none;
+    z-index: 22!important;
+}
+.calendarIcon, .eventCalOut, .ui-datepicker {
+    background-image: linear-gradient(
+90deg
+,#bb8719 0,#bb8719 37%,#e6c45d 73%,#bb8719 100%);
+}

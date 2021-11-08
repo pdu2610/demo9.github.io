@@ -1,0 +1,286 @@
+@media only screen and (max-width: 1860px) {}
+
+@media only screen and (max-width: 1680px) {
+    ul.nav-menu{
+		position:absolute;
+		top:50px;
+		width:100%;
+		height:0;
+		padding:0;
+		overflow:hidden;
+	}
+	ul.nav-menu.active{
+		height:auto;
+	}
+	ul.nav-menu li{
+		width:100%;
+	}
+	ul.nav-menu li a{
+		width:100%;
+		padding:0;
+		text-align:center;
+		background-color:#2c2c2c;
+	}
+	ul.nav-menu li a:hover{
+		background-color:#1c1c1c;
+	}
+	.nav-toggle{
+		display:block;
+	}
+    ul.main-menu {
+        position: absolute;
+        top: 110px;
+        width: 100%;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        right: 0;
+        background-color: #b3d2e6;
+    }
+    .main-menu.active {
+        height: auto;
+        display: block;
+        z-index: 999999999999;
+        top: 77px;
+        width: 256px;
+        text-align: center;
+       background-color: black;
+    }
+    ul.main-menu.active li {
+        padding: 10px 0px;
+    }
+    ul.main-menu.active li a {
+        color: white;
+        font-size: 18px;
+    }
+    ul.main-menu.active li:hover {
+        background-image: linear-gradient( 
+    90deg
+     , #bb8719 0%, #bb8719 37%, #e6c45d 73%, #bb8719 100%);
+        right: 0;
+    }
+    li.active {
+        background-image: linear-gradient( 
+    90deg
+     , #bb8719 0%, #bb8719 37%, #e6c45d 73%, #bb8719 100%);
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 1440px) {}
+
+@media only screen and (max-width: 1366px) {}
+
+@media only screen and (max-width: 1280px) {
+    .aboutcontant p {
+        margin: 0 0 20px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 1169px) {
+    .aboutcontant p {
+        margin: 0 0 10px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (max-width: 991px) {
+    .form-fill {
+        width: 50%;
+    }
+    .aboutcol {
+        width: 100%;
+        text-align: center;
+    }
+    .aboutcontant {
+        max-width: 1000px;
+        padding: 40px 15px 40px 15px;
+    }
+    .choisecol {
+        width: 50%;
+    }
+    .servicecol {
+        width: 33.33%;
+    }
+    .meetcol {
+        width: 100%;
+        text-align: center;
+    }
+    .meetcontant {
+        width: 100%;
+        text-align: center;
+    }
+    .footercol {
+        width: 100%;
+        padding: 0;
+    }
+    .footerinfo {
+        width: 50%;
+    }
+    .opninghours {
+        width: 50%;
+    }
+    .footerinnersection {
+        padding: 40px 0px 0 0; 
+        background-color: #141414;
+    }
+    
+}
+
+@media only screen and (max-width: 959px) {}
+
+@media only screen and (max-width: 800px) {
+    .headerbtn {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+   
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 767px) {
+    #logo {
+        width: 100%;
+        text-align: center;
+        padding: 0 0 20px 0px;
+    }
+    .headerright {
+        margin-left: 0;
+        text-align: center;
+        padding: 0;
+    }
+    .form-fill {
+        width: 100%;
+        padding: 0;
+    }
+    .banercaption h2 {
+        font-size: 26px;
+    }
+    .verdictcol {
+        width: 100%;
+    }
+    .servicecol {
+        width: 50%;
+    }
+    .main-menu.active {
+        top: 55px;
+    }
+    .baneritem{
+      height: 300px;
+       
+    }
+    .formfill {
+        padding: 0;
+    }
+    .aboutinner{
+        background-image: none;
+        height: auto
+    }
+    .aboutinner img {
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 640px) {}
+
+@media only screen and (max-width: 575px) {
+    .choisecol {
+        width: 100%;
+    }
+    .footerinfo {
+        text-align: center;
+        padding: 0px 0 30px;
+        width: 100%;
+    }
+    .opninghours {
+        width: 100%;
+    }
+    .opningbox {
+        max-width: 225px;
+        margin: 0 auto;
+    }
+    .choisecol {
+        padding: 0 0 20px 0px;
+    }
+    .choisebox {
+        max-width:100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .servicecol {
+        width: 100%;
+        padding: 0 0 20px 0px;
+    }
+    .appoimentsection,
+    .whychoosesection,
+    .verdictsection,
+    .ourservicesection,
+    .meetsection,
+    .insurncesection,
+    .footerformsection {
+        padding: 20px 0;
+    }
+    .footerinnersection{
+        padding: 20px 0 0 0;
+    }
+    .appoimentsection h2 {
+        font-size: 24px;
+        margin: 0 0 20px;
+    }
+    .aboutcontant h1 {
+        font-size: 24px;
+        margin: 0 0 20px;
+    }
+    .whychoosesection h2,
+    .ourservicesection h2,
+    .meetsection h2,
+    .insurncesection h2,
+    .footerformsection h2 {
+        font-size: 24px;
+        margin: 0 0 20px;
+    }
+    .meetcontant small {
+        margin-bottom: 10px;
+    }
+    .headernum {
+        width: 100%;
+    }
+    #logo {
+        padding: 0 0 10px 0px;
+    }
+    .headernum {
+        padding-bottom: 10px;
+    }
+    .aboutcontant {
+        padding: 20px 15px 20px 15px;
+    }
+    
+}
+
+@media only screen and (max-width: 320px) {
+    .meetcontant p {
+        font-size: 16px;
+    }
+    .insurnceconntant p {
+        font-size: 16px;
+    }
+    .footercall a,
+    .footerfax,
+    .footeradd a {
+        font-size: 18px;
+    }
+    .aboutcontant h1 {
+        font-size: 20px;
+        margin: 0 0 20px;
+    }
+    .banercaption h2 {
+        font-size: 24px;
+    }
+}
